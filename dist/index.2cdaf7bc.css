@@ -1,26 +1,33 @@
-*, :after, :before {
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:after, :before {
   box-sizing: border-box;
 }
 
 body {
-  background-color: #eee;
+  background-color: #ffe600;
+  min-height: 100vh;
   position: relative;
 }
 
 .nose {
   border: 10px solid #0000;
-  border-top-color: red;
+  border-top-color: #000;
   border-bottom: none;
   width: 0;
   height: 0;
   margin-left: -10px;
   position: relative;
-  top: 200px;
+  top: 150px;
   left: 50%;
 }
 
 .nose > .cycle {
-  background-color: red;
+  background-color: #000;
   border-radius: 8px 8px 0 0;
   width: 20px;
   height: 8px;
@@ -60,6 +67,36 @@ body {
 
 .eye.right {
   transform: translateX(100px);
+}
+
+.mouth {
+  width: 180px;
+  height: 200px;
+  margin-left: -90px;
+  position: absolute;
+  top: 170px;
+  left: 50%;
+}
+
+.mouth .up .lip.left {
+  border: 5px solid #0000;
+  border-color: #0000 #0000 #000 #000;
+  border-radius: 15px 0 20px 50px;
+  width: 90px;
+  height: 20px;
+  position: absolute;
+  transform: rotate(-20deg)translateX(6px);
+}
+
+.mouth .up .lip.right {
+  border: 5px solid #000;
+  border-color: #0000 #000 #000 #0000;
+  border-radius: 0 15px 50px 20px;
+  width: 90px;
+  height: 20px;
+  position: absolute;
+  left: 50%;
+  transform: rotate(20deg)translateX(-6px);
 }
 
 /*# sourceMappingURL=index.2cdaf7bc.css.map */
