@@ -1,0 +1,13 @@
+12
+34E:\Desktop\project\11.Pikachu\dist133511902832344445 1
+43E:\Desktop\project\11.Pikachu\src\style.css133511902832167045 0
+33E:\Desktop\project\11.Pikachu\src133511874158779059 1
+44E:\Desktop\project\11.Pikachu\src\index.html133511902513521875 0
+41E:\Desktop\project\11.Pikachu\src\main.js133511874102845701 0
+45E:\Desktop\project\11.Pikachu\dist\index.html133511902513834206 0
+53E:\Desktop\project\11.Pikachu\dist\index.2cdaf7bc.css133511902832324422 0
+61E:\Desktop\project\11.Pikachu\dist\11.Pikachu.59712999.js.map133511882072213341 0
+57E:\Desktop\project\11.Pikachu\dist\11.Pikachu.59712999.js133511882072183357 0
+57E:\Desktop\project\11.Pikachu\dist\index.2cdaf7bc.css.map133511902832334423 0
+52E:\Desktop\project\11.Pikachu\dist\index.de158e3a.js133511882072163367 0
+56E:\Desktop\project\11.Pikachu\dist\index.de158e3a.js.map133511882072213341 0
