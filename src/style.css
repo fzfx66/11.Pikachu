@@ -16,15 +16,37 @@ body{
     left: 50%;
     top: 150px;
     margin-left: -10px;
+    z-index: 10;
+    border-radius: 2px;
 }
-
+@keyframes wave{
+    0%{
+        transform: rotate(0deg);
+    }
+    25%{
+        transform: rotate(10deg);
+    }
+    50%{
+        transform: rotate(0deg);
+    }
+    75%{
+        transform: rotate(-10deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+.nose:hover{
+    transform-origin: 50% 100%;    /*鼻子以最下尖为基准晃动*/ 
+    animation: wave 150ms infinite linear;
+}
 .nose > .cycle{
     position:absolute;
     height:8px;
     width:20px;
-    top:-18px;
+    top:-17px;
     left:-10px;
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 8px 4 4;
     background-color: #000;
 }
 
@@ -58,7 +80,6 @@ body{
     transform: translateX(100px);
 }
 .mouth{
-    border:1px solid blue;
     position: absolute;
     left: 50%;
     top:170px;
@@ -66,25 +87,72 @@ body{
     width:180px;
     margin-left:-90px;
 }
-.mouth .up .lip.left{
-    border: 5px solid #000;
+.mouth .up .lip{
+    background-color: #ffe600;
+    border: 3px solid #000;
     height:20px;
     width:90px;
-    border-radius:15 0 20 50px;
     border-top-color:transparent;
-    border-right-color:transparent;
-    transform: rotate(-20deg) translateX(6px);
     position:absolute;
 }
+.mouth .up .lip.left{
+    border-radius:15 0 10 50px;
+    border-right-color:transparent;
+    transform: rotate(-20deg) translateX(3px);
+}
 .mouth .up .lip.right{
-    border: 5px solid #000;
-    height:20px;
-    width:90px;
-    border-radius:0 15 50 20px;
-    border-top-color:transparent;
+    border-radius:0 15 50 10px;
     border-left-color:transparent;
-    transform: rotate(20deg) translateX(-6px);
+    transform: rotate(20deg) translateX(-3px);
+    left:50%;
+}
+.mouth .down{
+    position:relative;
+    left:50%;
+    margin-left: -70px;
+    margin-top:4px;
+    width:140px;
+    height:200;
+    overflow: hidden;
+    border-radius:20 20 0 0;
+}
+.mouth .down .upTongue {
+    width:130px;
+    height:450px;
     position:absolute;
     left:50%;
-
+    margin-left: -65px;
+    margin-top:-290px;
+    border:2px solid rgba(127, 127, 127, 10%);
+    border-radius: 0 0 50% 50%;   /* 75px/300px */
+    z-index: -1;
+    background-color: #96000a;
+    overflow: hidden;
+}
+.mouth .down .upTongue .downTongue{
+    background-color: #ff485f;
+    height:300px;
+    width:200px;
+    position: absolute;
+    bottom:-162px;
+    left:50%;
+    margin-left: -100px;
+    border-radius: 150px/200px;
+}
+.face{
+    position:absolute;
+    border:3px solid black;
+    left:50%;
+    width:88px;
+    height:88px;
+    top:200px;
+    margin-left:-44px;
+    background-color: #ff0000;
+    border-radius: 50%;
+}
+.face.left{
+    transform: translateX(-150px);
+}
+.face.right{
+    transform: translateX(150px);
 }
